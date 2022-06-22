@@ -2,6 +2,7 @@ import { yupResolver } from '@hookform/resolvers/yup';
 import * as Yup from 'yup';
 import moment from "moment"; 
 // install npm moment , yup , yupresolver
+// moment = get time and data 
  const formOptions = { resolver: yupResolver(passwordvalidation) };
 const { register, handleSubmit, formState: { errors } } = useForm(formOptions);
 const passwordvalidation =Yup.object().shape({
